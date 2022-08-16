@@ -1,5 +1,13 @@
-Docker Mautic Image
+Docker Mautic Image 
 ===================
+
+# Updates for using the latest version on a `arm 64` build
+
+- update `update.sh` to fit the JSON again as the `name` does not work anymore
+- updated the `apache`-Folder & the `Dockerfile` to `php 7.4` because it was necesarry to work with `composer`
+  - also needed to add pfc soem libs who are not in the main `php`repo anymore
+- updated `common/docker-entrypoint.sh` to work with the latest versions (`4.4.1`) ~~cron~~/Symfony Console Commands (from `app/console` to `app/bin`)
+- added `README_UPDATE.md` to document some stuff.
 
 # How to use this image
 
